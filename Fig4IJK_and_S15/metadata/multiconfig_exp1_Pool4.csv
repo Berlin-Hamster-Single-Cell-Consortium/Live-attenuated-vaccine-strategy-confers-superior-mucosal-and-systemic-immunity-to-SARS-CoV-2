@@ -1,0 +1,21 @@
+[gene-expression],,
+reference,/fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/,
+,,
+[libraries],,
+fastq_id,fastqs,feature_types
+exp1_GEX_Pool4,/fast/scratch/users/peidlis_c/CovHamster/Impf/FASTQ/,Gene Expression
+exp1_CellPlex_Pool4,/fast/scratch/users/peidlis_c/CovHamster/Impf/FASTQ/,Multiplexing Capture
+,,
+[samples],,
+sample_id,cmo_ids,
+BL_C3,CMO301,
+BL_C4,CMO302,
+BL_D3,CMO303,
+BL_D4,CMO304,
+LU_C3,CMO305,
+LU_C4,CMO306,
+LU_D3,CMO307,
+LU_D4,CMO308,
+NM_C3,CMO309,
+NM_D3,CMO311,
+NM_D4,CMO312,

@@ -1,0 +1,548 @@
+Building DAG of jobs...
+Launch sidecar process and read first output line.
+Done reading first output line.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1000
+Job stats:
+job                      count    min threads    max threads
+---------------------  -------  -------------  -------------
+all                          1              1              1
+loom_to_velocyto_h5          6              4              4
+velocyto_from_nomulti        6             16             16
+total                       13              1             16
+
+Select jobs to execute...
+
+[Fri Apr 29 08:56:45 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log
+    jobid: 2
+    wildcards: i=1, j=1
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 2 with external jobid '1733860'.
+
+[Fri Apr 29 08:56:45 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool3_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool3_nomulti/velocyto/exp2_Pool3_nomulti_loom.loom
+    log: log/exp2_Pool3_nomulti_velocyto.log
+    jobid: 20
+    wildcards: i=2, j=3
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 20 with external jobid '1733861'.
+
+[Fri Apr 29 08:56:45 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log
+    jobid: 8
+    wildcards: i=1, j=3
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 8 with external jobid '1733862'.
+
+[Fri Apr 29 08:56:46 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool6_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool6_nomulti/velocyto/exp2_Pool6_nomulti_loom.loom
+    log: log/exp2_Pool6_nomulti_velocyto.log
+    jobid: 29
+    wildcards: i=2, j=6
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 29 with external jobid '1733863'.
+
+[Fri Apr 29 08:56:46 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log
+    jobid: 5
+    wildcards: i=1, j=2
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 5 with external jobid '1733864'.
+
+[Fri Apr 29 08:56:47 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log
+    jobid: 11
+    wildcards: i=1, j=4
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 11 with external jobid '1733865'.
+[Fri Apr 29 18:12:49 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 8
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/         -e exp1_Pool3_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool3_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1733862
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 8, external: 1733862, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 8.
+Select jobs to execute...
+
+[Fri Apr 29 18:12:49 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log
+    jobid: 8
+    wildcards: i=1, j=3
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 8 with external jobid '1751162'.
+[Fri Apr 29 21:10:00 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 2
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/         -e exp1_Pool1_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool1_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1733860
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 2, external: 1733860, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 2.
+Select jobs to execute...
+
+[Fri Apr 29 21:10:00 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log
+    jobid: 2
+    wildcards: i=1, j=1
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 2 with external jobid '1751381'.
+[Fri Apr 29 21:29:54 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 5
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/         -e exp1_Pool2_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool2_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1733864
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 5, external: 1733864, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 5.
+Select jobs to execute...
+
+[Fri Apr 29 21:29:54 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log
+    jobid: 5
+    wildcards: i=1, j=2
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 5 with external jobid '1751410'.
+[Fri Apr 29 22:58:54 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 11
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/         -e exp1_Pool4_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool4_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1733865
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 11, external: 1733865, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 11.
+Select jobs to execute...
+
+[Fri Apr 29 22:58:54 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log
+    jobid: 11
+    wildcards: i=1, j=4
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 11 with external jobid '1752093'.
+[Sat Apr 30 03:28:52 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 8
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/         -e exp1_Pool3_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool3_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1751162
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 8, external: 1751162, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 8.
+Select jobs to execute...
+
+[Sat Apr 30 03:28:52 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log
+    jobid: 8
+    wildcards: i=1, j=3
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 8 with external jobid '1753204'.
+[Sat Apr 30 09:18:00 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 2
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/         -e exp1_Pool1_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool1_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1751381
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 2, external: 1751381, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 2.
+Select jobs to execute...
+
+[Sat Apr 30 09:18:00 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log
+    jobid: 2
+    wildcards: i=1, j=1
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 2 with external jobid '1755059'.
+[Sat Apr 30 22:02:02 2022]
+Finished job 20.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Sat Apr 30 22:02:02 2022]
+rule loom_to_velocyto_h5:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool3_nomulti/velocyto/exp2_Pool3_nomulti_loom.loom
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool3_nomulti/velocyto/exp2_Pool3_nomulti_loom_velocyto.h5
+    jobid: 19
+    wildcards: i=/fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool3_nomulti/velocyto/exp2_Pool3_nomulti_loom
+    threads: 4
+    resources: tmpdir=/tmp, mem=128G, time=01:00:00
+
+Submitted job 19 with external jobid '1761467'.
+[Sat Apr 30 22:11:03 2022]
+Finished job 19.
+2 of 13 steps (15%) done
+[Sun May  1 00:45:59 2022]
+Finished job 29.
+3 of 13 steps (23%) done
+Select jobs to execute...
+
+[Sun May  1 00:45:59 2022]
+rule loom_to_velocyto_h5:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool6_nomulti/velocyto/exp2_Pool6_nomulti_loom.loom
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool6_nomulti/velocyto/exp2_Pool6_nomulti_loom_velocyto.h5
+    jobid: 28
+    wildcards: i=/fast/scratch/users/peidlis_c/CovHamster/Impf/exp2_Pool6_nomulti/velocyto/exp2_Pool6_nomulti_loom
+    threads: 4
+    resources: tmpdir=/tmp, mem=128G, time=01:00:00
+
+Submitted job 28 with external jobid '1761565'.
+[Sun May  1 00:49:04 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 5
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/         -e exp1_Pool2_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool2_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1751410
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 5, external: 1751410, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 5.
+Select jobs to execute...
+
+[Sun May  1 00:49:04 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log
+    jobid: 5
+    wildcards: i=1, j=2
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 5 with external jobid '1761566'.
+[Sun May  1 00:49:58 2022]
+Finished job 28.
+4 of 13 steps (31%) done
+[Sun May  1 16:34:13 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 11
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/         -e exp1_Pool4_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool4_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1752093
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 11, external: 1752093, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 11.
+Select jobs to execute...
+
+[Sun May  1 16:34:13 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log
+    jobid: 11
+    wildcards: i=1, j=4
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 11 with external jobid '1761703'.
+[Sun May  1 22:10:14 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 8
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/         -e exp1_Pool3_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool3_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1753204
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 8, external: 1753204, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 8.
+Select jobs to execute...
+
+[Sun May  1 22:10:14 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log
+    jobid: 8
+    wildcards: i=1, j=3
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 8 with external jobid '1761730'.
+[Mon May  2 01:13:13 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 2
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/         -e exp1_Pool1_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool1_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1755059
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 2, external: 1755059, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 2.
+Select jobs to execute...
+
+[Mon May  2 01:13:13 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log
+    jobid: 2
+    wildcards: i=1, j=1
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 2 with external jobid '1761731'.
+[Mon May  2 01:40:09 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 5
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/         -e exp1_Pool2_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool2_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761566
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 5, external: 1761566, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 5.
+Select jobs to execute...
+
+[Mon May  2 01:40:09 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log
+    jobid: 5
+    wildcards: i=1, j=2
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 5 with external jobid '1761732'.
+[Mon May  2 07:14:12 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 11
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/         -e exp1_Pool4_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool4_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761703
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 11, external: 1761703, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Trying to restart job 11.
+Select jobs to execute...
+
+[Mon May  2 07:14:12 2022]
+rule velocyto_from_nomulti:
+    input: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam, /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log
+    jobid: 11
+    wildcards: i=1, j=4
+    threads: 16
+    resources: tmpdir=/tmp, mem=256G, time=6-23:00:00
+
+Submitted job 11 with external jobid '1761733'.
+[Mon May  2 07:33:17 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 8
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+    log: log/exp1_Pool3_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool3_nomulti/velocyto/         -e exp1_Pool3_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool3_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761730
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 8, external: 1761730, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+Job failed, going on with independent jobs.
+[Mon May  2 13:38:13 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 2
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+    log: log/exp1_Pool1_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool1_nomulti/velocyto/         -e exp1_Pool1_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool1_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761731
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 2, external: 1761731, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Job failed, going on with independent jobs.
+[Mon May  2 14:00:19 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 5
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+    log: log/exp1_Pool2_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool2_nomulti/velocyto/         -e exp1_Pool2_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool2_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761732
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 5, external: 1761732, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Job failed, going on with independent jobs.
+[Mon May  2 21:51:20 2022]
+Error in rule velocyto_from_nomulti:
+    jobid: 11
+    output: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+    log: log/exp1_Pool4_nomulti_velocyto.log (check log file(s) for error message)
+    shell:
+        
+        export LC_ALL=en_US.utf8
+        # mkdir -p /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/
+        velocyto run         -o /fast/scratch/users/peidlis_c/CovHamster/Impf//exp1_Pool4_nomulti/velocyto/         -e exp1_Pool4_nomulti_loom         /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/outs/possorted_genome_bam.bam         /fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/genes/genes.gtf > log/exp1_Pool4_nomulti_velocyto.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 1761733
+
+Error executing rule velocyto_from_nomulti on cluster (jobid: 11, external: 1761733, jobscript: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/tmp.xmj839p3/snakejob.velocyto_from_nomulti.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Job failed, going on with independent jobs.
+Cluster sidecar process has terminated (retcode=0).
+Exiting because a job execution failed. Look above for error message
+BUG: Out of jobs ready to be started, but not all files built yet. Please check https://github.com/snakemake/snakemake/issues/823 for more information.
+Remaining jobs:
+ - velocyto_from_nomulti: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom.loom
+ - loom_to_velocyto_h5: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom_velocyto.h5
+ - velocyto_from_nomulti: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom.loom
+ - loom_to_velocyto_h5: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom_velocyto.h5
+ - all: 
+ - velocyto_from_nomulti: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool2_nomulti/velocyto/exp1_Pool2_nomulti_loom.loom
+ - loom_to_velocyto_h5: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool1_nomulti/velocyto/exp1_Pool1_nomulti_loom_velocyto.h5
+ - loom_to_velocyto_h5: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool3_nomulti/velocyto/exp1_Pool3_nomulti_loom_velocyto.h5
+ - velocyto_from_nomulti: /fast/scratch/users/peidlis_c/CovHamster/Impf/exp1_Pool4_nomulti/velocyto/exp1_Pool4_nomulti_loom.loom
+Complete log: /fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/snakemake/.snakemake/log/2022-04-29T085643.480401.snakemake.log

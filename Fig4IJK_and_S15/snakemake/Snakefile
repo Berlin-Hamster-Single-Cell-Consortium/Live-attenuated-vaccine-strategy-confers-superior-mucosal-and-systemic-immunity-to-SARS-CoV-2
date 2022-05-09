@@ -1,0 +1,57 @@
+# This Snakefile will produce count files from FASTQ.
+# You will need the FASTQ files from GEO for this.
+# run with: snakemake --jobs 40 -k
+# check workflow with: snakemake --dag | dot -Tpdf > dag.pdf
+
+# data directories
+DIR = "/fast/scratch/users/peidlis_c/CovHamster/Impf/"  # lots of data will be dumped here (aka temp dir)
+MDIR = "/fast/work/users/peidlis_c/projects/Cov19Hamster/Impfe/metadata/"  # path to metadata folder
+GAP = "/fast/work/projects/bluethgen_landthaler/Cov19_Hamster/Genomes/MesAurJ_rev3_ext_S2/"  # Path to genome annotation folder (MesAur)
+GTF = GAP+"genes/genes.gtf"
+
+import pandas as pd
+import numpy as np
+import sys
+
+### Main rule
+
+rule all:
+    input:
+        # cellranger
+        expand(DIR+"exp1_Pool{j}_nomulti/outs/filtered_feature_bc_matrix.h5", j=['1', '2', '3', '4']),
+        expand(DIR+"exp2_Pool{j}_nomulti/outs/filtered_feature_bc_matrix.h5",  j=['1', '2', '3', '4', '5', '6'])
+
+### Sub rules
+
+rule cellranger_count:
+    threads: 16
+    resources:
+        mem='128G',
+        time='6-23:00:00'
+    input:
+        libraries = MDIR + "singleconfig_exp{i}_Pool{j}.csv",
+        feature_ref = MDIR + "custom_cmo_ref_exp{i}_Pool{j}.csv"
+    output:
+        h5=DIR+"exp{i}_Pool{j}_nomulti/outs/filtered_feature_bc_matrix.h5",
+        pbam=DIR+"exp{i}_Pool{j}_nomulti/outs/possorted_genome_bam.bam"
+    shell:
+        '''
+        cd {DIR}
+        rm -r {DIR}/exp{wildcards.i}_Pool{wildcards.j}_nomulti  # Martian needs to make folder itself
+        cellranger count --jobmode=slurm --mempercore=20 --id=exp{wildcards.i}_Pool{wildcards.j}_nomulti \
+            --libraries={input.libraries} \
+            --transcriptome={GAP} \
+            --feature-ref={input.feature_ref}
+        '''
+
+rule copy_fastq:
+    output: DIR+'FASTQ/flags/link.flag'
+    shell:
+        '''
+        mkdir {DIR}FASTQ/
+        cd {DIR}FASTQ/
+        ln -s {DIR}*.fastq.gz .
+        rename _part _S *
+        rename _R _L001_R *
+        touch {DIR}flags/link.flag
+        '''

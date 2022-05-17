@@ -16,3 +16,5 @@ Step 3 - The cell types in the combined object are annotated, either as specific
 Step 4 - After filtering, samples are processed using the SCT/integrate workflow, see folder Step4_filter_integrate.
 
 Step 5 - Cell types are again annotated, yielding the Seurat objects used for the analysis in the preprint (folder Step5_annotate). These objects are also available on GEO (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200596).
+
+For the analysis in figure 4 I-K (folder Fig4IJK_and_S15), T cells from lung samples from experiment 2 were extracted from the respective Seurat object. For the other plots in the manuscript, see folder Figures_Plots

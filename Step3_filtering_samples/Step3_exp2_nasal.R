@@ -14,7 +14,7 @@ library(tidyr)
 library(dendextend)
 library(DESeq2)
 #see https://github.com/Berlin-Hamster-Single-Cell-Consortium/Single-cell-sequencing-of-COVID-19-pathogenesis-in-golden-Hamsters-
-source("~./smooth_DimPlot.R")
+source("./smooth_DimPlot.R")
 library(akima)
 library(pheatmap)
 #see http://www.cookbook-r.com/Graphs/ Plotting_means_and_error_bars_(ggplot2)

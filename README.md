@@ -3,6 +3,7 @@ This is the code for the preprint available at https://www.biorxiv.org/content/1
 
 ## Experimental setup
 ![Experimental setup](overview.jpg)
+
 Bulk and single-cell transcriptomics was performed at 2 dpi. The first experiment ("exp1…") is the one in the upper part of the image above, with only one vaccination. The second experiment ("exp2…") is the prime-boost scheme (lower part). This repository contains the code used for the generation of the figures in the preprint linked above. Raw fastq files are available at NCBI GEO, accession number GSE200596 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200596). The blood samples from the first experiment were of very poor quality and not processed further. 
 
 The libraries were generated using the cellplex kit from 10x genomics. Processing was done as following.

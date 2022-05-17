@@ -1,0 +1,19 @@
+[gene-expression]
+reference,/path/to/genomes/MesAurJ_rev3_ext_S2/
+min-assignment-confidence,0.8
+
+[libraries]
+fastq_id,fastqs,feature_types
+GEX_Pool3_partXXXX,/path/to/exp2/fastq/Pool3/partXXXX/,Gene Expression
+CellPlex_Pool3_partXXXX,/path/to/exp2/fastq/Pool3/partXXXX/,Multiplexing Capture
+
+[samples]
+sample_id,cmo_ids
+NM_A1,CMO305
+NM_A2,CMO306
+NM_A3,CMO307
+NM_B1,CMO308
+NM_B2,CMO309
+NM_B3,CMO310
+NM_X1,CMO311
+NM_X2,CMO312

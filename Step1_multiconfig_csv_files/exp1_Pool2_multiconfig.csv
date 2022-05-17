@@ -1,0 +1,22 @@
+[gene-expression]
+reference,/path/to/genomes/MesAurJ_rev3_ext_S2/
+min-assignment-confidence,0.87
+
+[libraries]
+fastq_id,fastqs,feature_types
+GEX_Pool2_partXXXX,/path/to/exp1/fastq/Pool2/partXXXX/,Gene Expression
+CellPlex_Pool2_partXXXX,/path/to/exp1/fastq/Pool2/partXXXX/,Multiplexing Capture
+
+[samples]
+sample_id,cmo_ids
+BL_A3,CMO301
+BL_A4,CMO302
+BL_B3,CMO303
+BL_B4,CMO304
+LU_A3,CMO305
+LU_A4,CMO306
+LU_B3,CMO307
+LU_B4,CMO308
+NM_A3,CMO309
+NM_A4,CMO310
+NM_B4,CMO312
